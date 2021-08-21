@@ -1,5 +1,10 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(libpng)
+
+#print msg on building
 message(STATUS "libpng ar: ${CMAKE_AR}")
-cmake_minimum_required(VERSION 2.8)
+
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 set(PNG_LIBRARIES png_bundled PARENT_SCOPE)
 add_library(png_bundled STATIC
